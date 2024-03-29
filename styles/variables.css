@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root
+{
+    /*Font variables*/
+    --main-font:  "Work Sans", sans-serif;
+
+    /*Color variables*/
+    --clr-bg-dark: rgba(21, 32, 43, 0.5);
+    --clr-bg-light: rgba(255, 255, 255, 0.6);
+
+    --clr-font-dark: #0F1419;
+    --clr-font-light: #FFFFFF;
+
+    --clr-accent-blue: #1D9BF0;
+}

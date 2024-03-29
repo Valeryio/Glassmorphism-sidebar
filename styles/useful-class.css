@@ -1,0 +1,41 @@
+
+
+a {
+    outline: none;
+    color: var(--clr-font-light);
+    text-decoration: none;
+    /* padding: 2px 1px 0; */
+  }
+  
+  a:link {
+    color: blue;
+  }
+  /*
+  a:visited {
+    color: var(--clr-font-light);
+  }*/
+  
+  a:focus,
+  a:hover {
+    font-weight: 600;
+    color: var(--clr-font-light);
+  }
+  
+  a:active {
+    font-weight: 600;
+  }
+
+
+
+button
+{
+
+    color: var(--clr-font-light);
+
+    border: none;
+    height: 3.75rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    min-width: calc(14rem);
+    background-color: var(--clr-accent-blue);
+}

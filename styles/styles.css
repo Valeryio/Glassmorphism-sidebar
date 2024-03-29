@@ -1,2 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap')
+@import "variables.css";
+@import "useful-class.css";
 
+body
+{
+
+
+    padding: 2rem;
+    font-family: var(--main-font);
+    color: var(--clr-font-light);
+}
+
+.sidebar
+{
+    /*Local variables*/
+    --intern-padding: 1rem;
+
+    max-width: 18rem;
+    min-height: 39.5rem;
+    border-radius: 1rem;
+    padding: var(--intern-padding);
+    background: var(--clr-bg-dark);
+}
+
+.options
+{
+    width: fit-content;
+    border: 1px solid;
+    list-style: none;
+    padding: 0 3rem 0 1rem;
+}
+
+.sidebar-options
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+
+    height: 4rem;
+    max-width: 11rem;
+    border: 1px solid red;
+}
+
+/*
+.sidebar-options a
+{
+    display: none;
+}
+
+
+.options:hover .sidebar-options
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+
+    height: 4rem;
+    max-width: 11rem;
+    border: 1px solid red;
+}
+
+.options:hover a
+{
+    display: block;
+}
