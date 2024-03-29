@@ -15,6 +15,7 @@ body
     /*Local variables*/
     --intern-padding: 1rem;
 
+    width: fit-content;
     max-width: 18rem;
     min-height: 39.5rem;
     border-radius: 1rem;
@@ -27,9 +28,10 @@ body
     width: fit-content;
     border: 1px solid;
     list-style: none;
-    padding: 0 3rem 0 1rem;
+    padding: 0 1.5rem;
 }
 
+/*Basic properties for li items*/
 .sidebar-options
 {
     display: flex;
@@ -42,14 +44,18 @@ body
     border: 1px solid red;
 }
 
-/*
-.sidebar-options a
+/*Make some html elements disappear without ovvering effect*/
+.sidebar-options a, .primary-button span
 {
     display: none;
 }
 
+.sidebar:hover .primary-button img
+{
+    display: none;
+}
 
-.options:hover .sidebar-options
+.sidebar:hover .sidebar-options
 {
     display: flex;
     align-items: center;
@@ -61,7 +67,13 @@ body
     border: 1px solid red;
 }
 
-.options:hover a
+.sidebar:hover a
 {
     display: block;
+}
+
+.sidebar:hover .primary-button span
+{
+    display: block;
+    width: 14rem;
 }
