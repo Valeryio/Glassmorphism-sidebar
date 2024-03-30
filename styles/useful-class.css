@@ -39,7 +39,9 @@ button
     height: 3.75rem;
     cursor: pointer;
     border-radius: 2rem;
-    min-width: 3.75rem;
-    max-width: calc(14rem);
+    width: 3.75rem;
     background-color: var(--clr-accent-blue);
+
+    
+    transition: width ease-in-out 0.5s;
 }
