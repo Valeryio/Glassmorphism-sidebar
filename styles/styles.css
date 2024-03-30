@@ -14,7 +14,10 @@ body
     font-family: var(--main-font);
     color: var(--clr-font-light);
 
-    background: url('../ressources/bckground.png');
+    background: var(--clr-bg-dark);
+
+
+    background: url('../ressources/images/bckground.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -59,7 +62,8 @@ main
 {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, 0.8fr);
+    grid-template-columns: repeat(3, 0.6fr);
+    /* grid-template-columns: 500px auto 0.6fr; */
 
     grid-template-rows: 440px 128px;
 
@@ -70,13 +74,20 @@ main
     background-color: var(--clr-bg-light);
 }
 
+main > div
+{
+    border-radius: var(--bdr-radius);
+}
+
+
 .col
 {
-    
+    overflow: hidden;
     min-width: 300px;
     border: 1px solid white;
     background: var(--clr-bg-light);
 }
+
 
 .stats
 {
