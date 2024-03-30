@@ -14,4 +14,7 @@
     --clr-font-light: #FFFFFF;
 
     --clr-accent-blue: #1D9BF0;
+
+    /*Form variables*/
+    --bdr-radius: 2rem;
 }

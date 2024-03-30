@@ -39,7 +39,7 @@ button
   /* min-width: 3.75rem; */
   height: 3.75rem;
   cursor: pointer;
-  border-radius: 2rem;
+  border-radius: var(--bdr-radius);
   color: var(--clr-font-light);
   background-color: var(--clr-accent-blue);
 

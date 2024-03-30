@@ -30,7 +30,7 @@ body
     flex-direction: column;
 
     width: 6rem;
-    border-radius: 2rem;
+    border-radius: var(--bdr-radius);
     padding: var(--intern-padding);
     background: var(--clr-bg-light);
 
@@ -61,23 +61,28 @@ main
     gap: 1rem;
     grid-template-columns: repeat(3, 0.8fr);
 
-    grid-template-rows: 800px 128px;
+    grid-template-rows: 440px 128px;
 
     width: 88%;
     height: 680px;
     padding: 1rem;
-    border-radius: 2rem;
+    border-radius: var(--bdr-radius);
     background-color: var(--clr-bg-light);
 }
 
 .col
 {
+    
     min-width: 300px;
-    /* width: 1080px; */
-    height: 60%;
-    background: var(--clr-font-dark);
+    border: 1px solid white;
+    background: var(--clr-bg-light);
 }
 
+.stats
+{
+    border: 1px solid white;
+    background-color: red;
+}
 
 
 /* Aside design*/
