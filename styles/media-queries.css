@@ -15,14 +15,14 @@
         justify-content: center;
     }
 
-    .responsive-note
+    body .responsive-note
     {
 
         width: 90vw;
         height: 80vh;
         padding: 6rem;
         display: block;
-        font-size: 40px;
+        font-size: calc(2rem + 1vw);
         border-radius: var(--bdr-radius);
         background-color: var(--clr-bg-light);
     }
