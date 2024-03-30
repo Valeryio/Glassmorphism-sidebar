@@ -65,10 +65,10 @@ main
     grid-template-columns: repeat(3, 0.6fr);
     /* grid-template-columns: 500px auto 0.6fr; */
 
-    grid-template-rows: 440px 128px;
+    grid-template-rows: 440px 200px;
 
-    width: 88%;
-    height: 680px;
+    width: 90%;
+    height: 702px;
     padding: 1rem;
     border-radius: var(--bdr-radius);
     background-color: var(--clr-bg-light);
@@ -89,10 +89,19 @@ main > div
 }
 
 
-.stats
+.main-description
 {
+    padding: 2rem;
+    border: none;
+    background-color: var(--clr-accent-gray);
+}
+
+
+
+.stats-
+{
+    background: var(--clr-bg-light);
     border: 1px solid white;
-    background-color: red;
 }
 
 
@@ -104,9 +113,6 @@ main > div
     border-radius: 2rem;
     background-color: var(--clr-bg-light);
 }
-
-
-
 
 /*Basic properties for li items*/
 .sidebar-options

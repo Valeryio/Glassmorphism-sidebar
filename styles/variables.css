@@ -14,6 +14,7 @@
     --clr-font-light: #FFFFFF;
 
     --clr-accent-blue: #1D9BF0;
+    --clr-accent-gray: rgba(151, 151, 151, 0.6);
 
     /*Form variables*/
     --bdr-radius: 2rem;
