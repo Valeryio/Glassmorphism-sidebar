@@ -91,12 +91,45 @@ main > div
 
 .main-description
 {
-    padding: 2rem;
     border: none;
-    background-color: var(--clr-accent-gray);
+    padding: 2rem 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(122, 122, 122, 0.6), rgba(39, 39, 39, 0.6));
+    /* background-color: rgba(151, 151, 151, 0.6); */
+    /* background-color: var(--clr-accent-gray); */
 }
 
+.main-description > h1
+{
+    font-weight: 400;
+    text-align: center;
+}
 
+.main-description > h2
+{
+    text-align: center;
+}
+
+.main-description > p
+{
+    text-align: center;
+    font-size: var(--fs-normal);
+}
+
+.socrate-citation
+{
+    font-weight: 300;
+    text-align: center;
+    color: var(--clr-font-dark);
+}
+
+.socrate-citation cite
+{
+    font-weight: 400;
+    display: block;
+}
 
 .stats-
 {

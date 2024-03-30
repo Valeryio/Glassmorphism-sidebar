@@ -6,6 +6,11 @@
     /*Font variables*/
     --main-font:  "Work Sans", sans-serif;
 
+    --fw-thin: 100;
+    --fw-regular: 400;
+
+    --fs-normal: 1rem;
+
     /*Color variables*/
     --clr-bg-dark: rgba(21, 32, 43, 0.5);
     --clr-bg-light: rgba(255, 255, 255, 0.6);
