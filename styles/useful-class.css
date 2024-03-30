@@ -29,19 +29,19 @@ a {
 button
 {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    color: var(--clr-font-light);
 
-    border: none;
-    height: 3.75rem;
-    cursor: pointer;
-    border-radius: 2rem;
-    width: 3.75rem;
-    background-color: var(--clr-accent-blue);
+  border: none;
+  width: 100%;
+  /* min-width: 3.75rem; */
+  height: 3.75rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  color: var(--clr-font-light);
+  background-color: var(--clr-accent-blue);
 
-    
-    transition: width ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
