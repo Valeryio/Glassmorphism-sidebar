@@ -17,9 +17,11 @@
 
     .responsive-note
     {
+
         width: 90vw;
         height: 80vh;
         padding: 6rem;
+        display: block;
         font-size: 40px;
         border-radius: var(--bdr-radius);
         background-color: var(--clr-bg-light);

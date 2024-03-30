@@ -22,6 +22,11 @@ body
     background-repeat: no-repeat;
 }
 
+body > .responsive-note
+{
+    display: none;
+}
+
 /*Sidebar designing*/
 .sidebar
 {
