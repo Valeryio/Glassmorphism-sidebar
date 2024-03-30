@@ -1,0 +1,28 @@
+@import "variables.css";
+
+
+
+@media screen and (max-width: 1480px) {
+    
+    .sidebar, main, .theme
+    {
+        display: none;
+    }
+
+    body
+    {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .responsive-note
+    {
+        width: 90vw;
+        height: 80vh;
+        padding: 6rem;
+        font-size: 40px;
+        border-radius: var(--bdr-radius);
+        background-color: var(--clr-bg-light);
+    }
+
+}
