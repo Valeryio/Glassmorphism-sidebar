@@ -1,0 +1,6 @@
+
+
+img[data-image="fake-svg"]
+{
+    filter: invert(1);
+}

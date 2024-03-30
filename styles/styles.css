@@ -1,13 +1,25 @@
+@import "theme.css";
 @import "variables.css";
 @import "useful-class.css";
 
 body
 {
-    padding: 2rem;
+    width: 100vw;
+    display: flex;
+    gap: 1rem;
+    /* grid-template-columns: auto auto 256px; */
+
+    padding: 1rem 2rem;
+    /* overflow: hidden; */
     font-family: var(--main-font);
     color: var(--clr-font-light);
+
+    background: url('../ressources/bckground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+/*Sidebar designing*/
 .sidebar
 {
     /*Local variables*/
@@ -20,36 +32,65 @@ body
     width: 6rem;
     border-radius: 2rem;
     padding: var(--intern-padding);
-    background: var(--clr-bg-dark);
+    background: var(--clr-bg-light);
 
     transition: all ease-in-out 0.5s;
 }
-
-.sidebar:hover
-{
-    align-items: start;
-    width: 16rem;
-}
-
 
 .logo-container
 {
     width: 100%;
     padding: 1rem 0.80rem;
-    border: 1px solid chartreuse;
 }
-
 
 .options
 {
     width: 100%;
-    /* width: fit-content; */
     list-style: none;
     padding: 0 0rem;
     margin-bottom: 2rem;
-
-    border: 1px solid violet;
 }
+
+
+
+/* Main design*/
+
+main
+{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 0.8fr);
+
+    grid-template-rows: 800px 128px;
+
+    width: 88%;
+    height: 680px;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: var(--clr-bg-light);
+}
+
+.col
+{
+    min-width: 300px;
+    /* width: 1080px; */
+    height: 60%;
+    background: var(--clr-font-dark);
+}
+
+
+
+/* Aside design*/
+.theme
+{
+    width: 128px;
+    /* width: clamp(); */
+    border-radius: 2rem;
+    background-color: var(--clr-bg-light);
+}
+
+
+
 
 /*Basic properties for li items*/
 .sidebar-options
@@ -61,35 +102,43 @@ body
 
     height: 4rem; 
     min-width: 4rem;
-    border: 1px solid crimson;
 }
 
-/*Make some html elements disappear without ovvering effect*/
+
+/*Make some html elements disappear without hovering effect*/
+.sidebar:hover
+{
+    /* align-items: start;*/
+    width: 16rem;
+    background-color: #fff;
+}
+
 .sidebar-options a
 {
     opacity: 0;
-    transition: all ease-in-out 0.7s;
+    /* position: absolute; */
+    transition: all ease-in-out 0.3s;
 }
 
 
-.primary-button span, 
-.primary-button img
+button[data-icon="plus-icon"] span, 
+button[data-icon="plus-icon"] img
 {
-    transition: opacity ease-in 0.4s;
+    transition: opacity ease-in 0.1s;
 }
 
-.primary-button img
+button[data-icon="plus-icon"] img
 {
     opacity: 1;
 }
 
-.primary-button span
+button[data-icon="plus-icon"] span
 {
     opacity: 0;
     position: absolute;
 }
 
-.sidebar:hover .primary-button img
+.sidebar:hover button[data-icon="plus-icon"] img
 {
     opacity: 0;
 }
@@ -98,13 +147,17 @@ body
 /*Make some html elements appear with overing effect*/
 .sidebar:hover .sidebar-options
 {
-    display: flex;
-    align-items: center;
     justify-content: start;
 }
 
+.sidebar:hover a
+{
+    position: relative;
+    color: var(--clr-font-dark);
+}
+
 .sidebar:hover a,
-.sidebar:hover .primary-button span
+.sidebar:hover button[data-icon="plus-icon"] span
 {
     opacity: 1;
 }
