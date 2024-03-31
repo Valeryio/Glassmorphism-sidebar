@@ -45,3 +45,14 @@ button
 
   transition: all ease-in-out 0.5s;
 }
+
+
+.green
+{
+  color: var(--clr-accent-green);
+}
+
+.red
+{
+  color: var(--clr-accent-red);
+}

@@ -19,6 +19,9 @@
     --clr-font-light: #FFFFFF;
 
     --clr-accent-blue: #1D9BF0;
+    --clr-accent-green: #007400;
+    --clr-accent-red: #A12643;
+    --clr-accent-light-gray: #57596B;
     --clr-accent-gray: rgba(151, 151, 151, 0.6);
 
     /*Form variables*/

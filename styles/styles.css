@@ -89,10 +89,13 @@ main > div
 {
     overflow: hidden;
     min-width: 300px;
-    border: 1px solid white;
     background: var(--clr-bg-light);
 }
 
+.main-profile-img-container
+{ 
+    border: 1px solid white;
+}
 
 .main-description
 {
@@ -136,11 +139,68 @@ main > div
     display: block;
 }
 
-.stats-
+.hobbies-data
 {
+    background: linear-gradient(to right bottom, rgba(252, 193, 136, 1),
+                                                rgba(112, 66, 210, 1),
+                                                rgba(46, 0, 142, 1));
+}
+
+
+.stats
+{
+    padding: 1rem 2rem;
+
+    gap: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--clr-font-dark);
     background: var(--clr-bg-light);
     border: 1px solid white;
 }
+
+.activity-head
+{
+    display: flex;
+    gap: 4rem;
+}
+
+.stats img[data-icon="push-up"],
+.stats img[data-icon="squats"],
+.stats img[data-icon="run"]
+{
+    width: 40px;
+}
+
+.factual-data
+{
+    gap: 0.8rem;
+    width: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.factual-data .number
+{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+
+.factual-data .percentage
+{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.data p
+{
+    font-weight: 500;
+    color: var(--clr-accent-light-gray);
+}
+
 
 
 /* Aside design*/
